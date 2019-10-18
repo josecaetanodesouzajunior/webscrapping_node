@@ -1,0 +1,50 @@
+  <div class="card" style="width: 80%;margin: auto; margin-top: 30px; margin-bottom: 20px;">
+  {{#each projetos}}
+
+  <h3 class="card-header">{{titulo}}</h3>
+  <ul class="list-group">
+  
+  <li class="list-group-item">
+  <p><b>Data:</b> {{data}}</p>
+  <p><b>Situação:</b> {{situacao}}</p>
+<p><b>Autor:</b> {{autor}}</p>
+
+
+
+
+
+  </li>
+ 
+
+
+</ul>
+
+
+     <h4 style="margin-top: 20px; margin-left: 10px;">Trâmite</h4>
+
+     <table class="table" style="margin-top: 10px;">
+  <thead>
+    <tr>
+      <th scope="col">Projeto</th>
+      <th scope="col">Entrada</th>
+      <th scope="col">Prazo</th>
+      <th scope="col">Devolução</th>
+    </tr>
+  </thead>
+  <tbody>
+        {{#each tramite}}
+    <tr>    
+      <td>{{projeto}}</td>
+      <td>{{entrada}}</td>
+      <td>{{prazo}}</td>
+      <td>{{devolucao}}</td>  
+           
+    </tr>
+     {{/each}}
+    
+  </tbody>
+</table>
+ {{/each}}
+ </div>
+
+ 
